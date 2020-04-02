@@ -1,0 +1,20 @@
+// Correction Page
+@import "global";
+
+body.pg-questoes_resultados {
+	.btn.btn-success {
+		background: $success;
+	}
+
+	.btn.btn-danger {
+		background: $failure;
+	}
+
+	.label.label-success {
+		background: $success;
+	}
+
+	.label.label-danger {
+		background: $failure;
+	}
+}

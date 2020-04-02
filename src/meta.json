@@ -1,0 +1,24 @@
+{
+  "$schema": "file:../meta.schema.json",
+
+  "name": "CPBDark",
+  "namespace": "hinoki.dev",
+  "description": "A dark theme for CPBProva",
+  "version": "1.0.0",
+  "include": [ "*" ],
+  "match": [ "/\\.cpbprova\\.com\\.br[\\.\/]/" ],
+  "grant": [
+    "GM_getValue",
+    "GM_setValue",
+    "GM_listValues",
+    "GM_deleteValue",
+    "GM_getResourceText",
+    "GM_getResourceURL",
+    "GM_addStyle",
+    "GM_log",
+    "GM_openInTab",
+    "GM_registerMenuCommand",
+    "GM_setClipboard",
+    "GM_xmlhttpRequest"
+  ]
+}

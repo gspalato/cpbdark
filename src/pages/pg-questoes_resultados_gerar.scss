@@ -1,0 +1,12 @@
+// Entering on activity list
+@import "global";
+
+body.pg-questoes_resultados_gerar {
+	form.form .col-xs-12 .btn.btn-success {
+		background: $success !important;
+	}
+
+	form.form .col-xs-12 .btn.btn-success:hover {
+		background: rgb(70, 200, 70) !important;
+	}
+}

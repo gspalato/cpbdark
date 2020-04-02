@@ -1,0 +1,21 @@
+// Users and Classes Page
+@import "global";
+
+body.pg-usuarios_turmas {
+	a.btn.btn-success.pull-right.btn-lg.lytediv {
+		background: $success !important;
+	}
+
+	a.btn.btn-success.pull-right.btn-lg.lytediv:hover {
+		background: $success-hover !important;
+	}
+	
+	a.col-md-2.col-sm-3.col-xs-6 {
+		border-radius: 5px;
+	}
+
+	a.col-md-2.col-sm-3.col-xs-6 > img {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+}

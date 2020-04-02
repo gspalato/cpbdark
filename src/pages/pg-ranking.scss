@@ -1,0 +1,8 @@
+// Ranking
+@import "global";
+
+body.pg-ranking{
+	form[name="f_filtro"] button.btn.btn-success {
+		background: $button !important;
+	}
+}
