@@ -59,6 +59,3 @@ typings/
 
 # Visual Studio settings
 .vs
-
-# Build Output
-dist/
