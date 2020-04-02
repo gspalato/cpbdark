@@ -3,8 +3,7 @@
 // @namespace   hinoki.dev
 // @description A dark theme for CPBProva
 // @version     1.0.0
-// @include     *
-// @match       /\.cpbprova\.com\.br[\./]/
+// @match       *://cpbprova.com.br/*
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_listValues
