@@ -1,14 +1,14 @@
 // Global Configuration
 
 // Variables
-$brighter: #333;
-$normal: #222;
+$brighter: #353535;
+$normal: #252525;
 $border: rgba(255, 255, 255, .1);
 $button: rgb(55, 55, 55);
 $hover: rgba(255, 255, 255, .1);
 $text: #d2d2d2;
-$success: rgb(30, 200, 30);
-$success-hover: rgb(70, 200, 70);
+$success: rgb(50, 150, 50);
+$success-hover: rgb(90, 150, 90);
 $failure: rgb(235, 50, 50);
 $failure-hover: rgb(235, 90, 90);
 
@@ -41,23 +41,21 @@ input,
 	background: $brighter !important;
 }
 
-.input-group-addon {
-	display: none;
-}
-
 .input-group {
 	width: 100% !important;
-}
 
-.input-group input {
-	border-color: $border !important;
-	border-radius: 5px !important;
-}
+	.input-group-addon {
+		display: none;
+	}
 
-.input-group input {
-	&:active,
-	&:focus {
-		border: 1px solid rgba(50, 100, 200, 1);
+	input {
+		border-color: $border !important;
+		border-radius: 5px !important;
+
+		&:active,
+		&:focus {
+			border: 1px solid rgba(50, 100, 200, 1);
+		}
 	}
 }
 
@@ -104,6 +102,10 @@ table,
 	border-radius: 3px !important;
 }
 
+.table-responsive {
+	overflow: hidden !important;
+}
+
 .table {
 	&>thead>tr>th {
 		background: $brighter !important;
@@ -139,6 +141,10 @@ table,
 
 #d_notificacoes:hover, #d_notificacoes.active {
 	background: $hover !important;
+}
+
+#d_empresa {
+	padding-left: 3vh;
 }
 
 // Help (FAQ)
@@ -197,8 +203,8 @@ table,
 
 // Tiles (Similar to panels)
 .tile {
-	background: $brighter !important;
-	border: 1px solid $border !important;
+	background: transparent !important;
+	border: 1.5px solid $border !important;
 	box-shadow: none !important;
 }
 
@@ -352,11 +358,12 @@ div.dropdown-menu {
 	background-color: $hover !important;
 }
 // Scrollbars
-.scroll::scrollbar-thumb, .scroll::-webkit-scrollbar-thumb {
+::scrollbar-thumb, ::-webkit-scrollbar-thumb {
 	background: rgba(255, 255, 255, .25) !important;
-	box-shadow: none;
+	box-shadow: none !important;
 }
-.scroll::scrollbar, .scroll::-webkit-scrollbar,
-.scroll::scrollbar-track, .scroll:-webkit-scrollbar-track {
-	width: .15vw;
+::scrollbar, ::-webkit-scrollbar,
+::scrollbar-track, :-webkit-scrollbar-track {
+	width: .15vw !important;
+	background: transparent !important;
 }

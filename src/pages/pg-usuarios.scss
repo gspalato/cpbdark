@@ -2,15 +2,11 @@
 @import "global";
 
 body.pg-usuarios {
-	#d_empresa {
-		padding-left: 3vh;
-	}
-
-	.timeline:nth-child(1) .timeline-item-content .timeline-body .row.stacked .col-md-4.col-sm-6.col-xs-12 {
+	.timeline-tipo-planoestudo .timeline-item-content .timeline-body .row.stacked .col-md-4.col-sm-6.col-xs-12 {
 		margin: 0 1vh 0 1vh !important;
-	}
-	
-	.timeline:nth-child(1) .timeline-item-content .timeline-body .row.stacked .col-md-4.col-sm-6.col-xs-12 .panel {
-		border: 1px solid $border !important;
+
+		& .panel {
+			border: 1px solid $border !important;
+		}
 	}
 }

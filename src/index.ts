@@ -1,3 +1,3 @@
 import "./index.scss";
 
-console.log("Loaded CPBDark, by gspalato.");
+console.log("Hello! 👋\nLoaded CPBDark, by gspalato.");

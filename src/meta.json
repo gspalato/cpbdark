@@ -5,6 +5,8 @@
   "description": "A dark theme for CPBProva",
   "version": "1.0.0",
   "match": [ "*://cpbprova.com.br/*" ],
+  "downloadURL": "https://raw.githubusercontent.com/gspalato/cpbdark/master/dist/cpbdark.user.js",
+  "updateURL": "https://raw.githubusercontent.com/gspalato/cpbdark/master/dist/cpbdark.user.js",
   "grant": [
     "GM_getValue",
     "GM_setValue",
