@@ -26,14 +26,14 @@ body.pg-usuarios_turmas {
 	.fc-view.fc-listWeek-view.fc-list-view.fc-widget-content {
 		border: 0 !important;
 
-		.fc-list-item-title.fc-widget-content {
-			border: 0 !important;
-
+		.fc-list-item {
+			& * {
+				background: transparent !important;
+				border: 0 !important;
+			}
 			&:hover {
-				background: $hover;
+				background: $hover !important;
 			}
 		}
 	}
-
-	
 }
