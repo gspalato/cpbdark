@@ -18,4 +18,22 @@ body.pg-usuarios_turmas {
 			border-top-right-radius: 5px;
 		}
 	}
+
+	.btn.btn-info.btn-block {
+		background: $button !important;
+	}
+
+	.fc-view.fc-listWeek-view.fc-list-view.fc-widget-content {
+		border: 0 !important;
+
+		.fc-list-item-title.fc-widget-content {
+			border: 0 !important;
+
+			&:hover {
+				background: $hover;
+			}
+		}
+	}
+
+	
 }

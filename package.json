@@ -5,6 +5,7 @@
   "scripts": {
     "build": "webpack --progress --display-error-details",
     "build:prod": "webpack --progress --config webpack.prod.config.ts --define process.env.NODE_ENV=\"production\"",
+    "convert:tosass": "sass-converter",
     "lint:fix": "sass-lint-auto-fix"
   },
   "keywords": [
@@ -24,6 +25,7 @@
     "kind-of": ">=6.0.3",
     "node-sass": "^4.13.1",
     "pad": "^1.1.0",
+    "sass-converter": "^1.1.0",
     "sass-lint-auto-fix": "^0.21.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.18.2",
