@@ -26,13 +26,22 @@ body.pg-usuarios_turmas {
 	.fc-view.fc-listWeek-view.fc-list-view.fc-widget-content {
 		border: 0 !important;
 
+		.fc-list-table td {
+			border: none !important;
+		}
+
 		.fc-list-item {
 			& * {
 				background: transparent !important;
 				border: 0 !important;
 			}
+
 			&:hover {
 				background: $hover !important;
+			}
+
+			.fc-list-item-marker.fc-widget-content:hover {
+				background: transparent !important;
 			}
 		}
 	}

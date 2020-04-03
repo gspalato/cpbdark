@@ -176,31 +176,42 @@ table,
 }
 
 // Panels (Lists, widgets, etc.)
-.panel, .panel-heading, .panel-primary {
-	background: $brighter !important;
-	border-top: transparent;
-}
+.panel {
+	&, .panel-heading, .panel-primary {
+		background: $brighter !important;
+		border-top: transparent;
+	}
 
-.panel.panel-default {
-	border-top: transparent;
-}
+	&.panel-default {
+		border-top: transparent;
+	}
 
-.panel-body, .panel-body::before {
-	border-radius: 3px !important;
-}
+	.panel-heading {
+		border: none !important;
+	}
 
-.panel-body-table {
-	border-top-left-radius: 0 !important;
-	border-top-right-radius: 0 !important;
-}
+	.panel-body
+	{
+		&, .panel-heading {
+			background: $brighter !important;
+			box-shadow: none !important;
+		}
+	}
 
-.panel-body, .panel-heading {
-	background: $brighter !important;
-	box-shadow: none !important;
-}
+	.panel-body {
+		&::before {
+			border-radius: 3px !important;
+		}
 
-.panel-body:has(a):hover {
-	border: 2px solid rgb(50, 100, 200);
+		&:has(a):hover {
+			border: 2px solid rgb(50, 100, 200);
+		}
+	}
+
+	.panel-body-table {
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: 0 !important;
+	}
 }
 
 // Fancybox (Wrapping the Profile Settings page)
@@ -221,40 +232,45 @@ a.tile .bg-success {
 }
 
 // Timelines (Lists)
- .timeline:before {
-	background: transparent;
-	border: 0;
-
-}
-.timeline-item, .timeline-item .timeline-item-content {
-	background: $brighter !important;
-	border: 1px rgba(100, 100, 100, .1) !important;
-	border-radius: 5px;
-	box-shadow: none !important;
-	padding: .5vh;
-}
-
-.timeline-item-professor {
-	border: 0 !important;
-}
-
 .timeline-body {
 	padding: 10px 5px !important;
 }
 
+.timeline-item {
+	background: $brighter !important;
+	border: 1px rgba(100, 100, 100, 0.1) !important;
+	border-radius: 5px;
+	box-shadow: none !important;
+	padding: .5vh;
+  
+	.timeline-item-content {
+	  	background: $brighter !important;
+	  	border: 1px rgba(100, 100, 100, 0.1) !important;
+	  	border-radius: 5px;
+	  	box-shadow: none !important;
+	  	padding: .5vh;
+	}
+}
+  
+.timeline-item-professor {
+	border: 0 !important;
+}
+  
 .timeline-item-icon, .timeline-item-info {
 	background: $brighter !important;
 	border-color: $brighter !important;
 }
-
-.timeline-item-content .btn.btn-primary {
-	background: rgb(75, 75, 75);
-	border-color: transparent;
-}
-
-.timeline-item-content .btn.btn-success {
-	background: $success;
-	border-color: transparent;
+  
+.timeline-item-content .btn {
+	&.btn-primary {
+	  	background: rgb(75, 75, 75);
+	  	border-color: transparent;
+	}
+  
+	&.btn-success {
+	  	background: $success;
+	  	border-color: transparent;
+	}
 }
 
 // Calendars
