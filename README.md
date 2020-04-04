@@ -1,13 +1,14 @@
 # CPBDark
 
 A dark theme for CPBProva, a website for the Brazilian branch of Adventist Schools.
+[\[Versão em português brasileiro\]](README_pt-br.md)
 
 ## Getting Started
 
 ### Installing
 
 - Install an userscript injector, such as Tampermonkey or Violentmonkey;
-- Open the [raw userscript file](https://raw.githubusercontent.com/gspalato/cpbdark/master/dist/cpbdark.user.js);
+- Open the [raw userscript file](dist/cpbdark.user.js);
 - Accept installation.
 
 ## Built With
@@ -16,6 +17,7 @@ A dark theme for CPBProva, a website for the Brazilian branch of Adventist Schoo
 * Typescript;
 * SASS;
 * Started with [DarkDaskin/generator-userscript](https://github.com/darkdaskin/generator-userscript);
+* Love <3
 
 ## Contributing
 
@@ -26,7 +28,7 @@ Suggestions may also be sent!
 
 * **Gabriel Spalato Marques (gspalato)** - *Developer, Initial work* - [gspalato](https://github.com/gspalato)
 
-See also the list of [contributors](https://github.com/gspalato/cpbdark/blob/master/CONTRIBUTORS.md) who participated in this project.
+See also the list of [contributors](CONTRIBUTORS.md) who participated in this project.
 
 ## License
 

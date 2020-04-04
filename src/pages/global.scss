@@ -1,16 +1,6 @@
 // Global Configuration
-
-// Variables
-$brighter: #353535;
-$normal: #252525;
-$border: rgba(255, 255, 255, .1);
-$button: rgb(55, 55, 55);
-$hover: rgba(255, 255, 255, .1);
-$text: #d2d2d2;
-$success: rgb(50, 150, 50);
-$success-hover: rgb(90, 150, 90);
-$failure: rgb(235, 50, 50);
-$failure-hover: rgb(235, 90, 90);
+@import 'variables';
+@import 'mixins';
 
 // Element Definitions
 * {
@@ -44,7 +34,7 @@ input,
 input {
 	&:active,
 	&:focus {
-		border: 1px solid rgba(50, 100, 200, 1);
+		border: 1px solid rgba(50, 100, 200, 1) !important;
 	}
 }
 
@@ -177,8 +167,11 @@ table,
 
 // Panels (Lists, widgets, etc.)
 .panel {
-	&, .panel-heading, .panel-primary {
-		background: $brighter !important;
+	// @include neumorphic-panel;
+	background: $brighter !important;
+
+
+	& {
 		border-top: transparent;
 	}
 
@@ -192,13 +185,13 @@ table,
 
 	.panel-body
 	{
+		border-radius: $panel-border-radius;
+
 		&, .panel-heading {
-			background: $brighter !important;
+			background: transparent !important;
 			box-shadow: none !important;
 		}
-	}
 
-	.panel-body {
 		&::before {
 			border-radius: 3px !important;
 		}
@@ -211,6 +204,11 @@ table,
 	.panel-body-table {
 		border-top-left-radius: 0 !important;
 		border-top-right-radius: 0 !important;
+	}
+
+	& .panel-heading, & .panel-primary {
+		border-top: transparent;
+		background: transparent !important;
 	}
 }
 
@@ -232,44 +230,52 @@ a.tile .bg-success {
 }
 
 // Timelines (Lists)
-.timeline-body {
-	padding: 10px 5px !important;
-}
+.timeline {
+	&:before {
+		content: none !important;
+		background: transparent !important;
+		border: none !important;
+	}
 
-.timeline-item {
-	background: $brighter !important;
-	border: 1px rgba(100, 100, 100, 0.1) !important;
-	border-radius: 5px;
-	box-shadow: none !important;
-	padding: .5vh;
-  
-	.timeline-item-content {
-	  	background: $brighter !important;
-	  	border: 1px rgba(100, 100, 100, 0.1) !important;
-	  	border-radius: 5px;
-	  	box-shadow: none !important;
-	  	padding: .5vh;
-	}
-}
-  
-.timeline-item-professor {
-	border: 0 !important;
-}
-  
-.timeline-item-icon, .timeline-item-info {
-	background: $brighter !important;
-	border-color: $brighter !important;
-}
-  
-.timeline-item-content .btn {
-	&.btn-primary {
-	  	background: rgb(75, 75, 75);
-	  	border-color: transparent;
-	}
-  
-	&.btn-success {
-	  	background: $success;
-	  	border-color: transparent;
+	.timeline-item {
+		background: $brighter !important;
+		border: 1px rgba(100, 100, 100, 0.1) !important;
+		border-radius: 5px;
+		box-shadow: none !important;
+		padding: .5vh;
+
+		.timeline-item-icon, .timeline-item-info {
+			background: $brighter !important;
+			border-color: $brighter !important;
+		}
+	  
+		.timeline-item-content {
+			  background: $brighter !important;
+			  border: 1px rgba(100, 100, 100, 0.1) !important;
+			  border-radius: 5px;
+			  box-shadow: none !important;
+			  padding: .5vh;
+			  
+			  & .btn {
+				&.btn-primary {
+					  background: rgb(75, 75, 75);
+					  border-color: transparent;
+				}
+			  
+				&.btn-success {
+					  background: $success;
+					  border-color: transparent;
+				}
+			}
+
+			.timeline-item-professor {
+				border: 0 !important;
+			}
+
+			.timeline-body {
+				padding: 10px 5px !important;
+			}
+		}
 	}
 }
 

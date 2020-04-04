@@ -1,0 +1,10 @@
+@mixin neumorphic-panel {
+    background: linear-gradient(145deg, #393939, #303030);
+    box-shadow:  10px 10px 20px #2d2d2d, 
+                -10px -10px 20px #3d3d3d;
+}
+
+@mixin neumorphic-custom($offset, $spread, $color, $lighten, $darken) {
+    box-shadow:  $offset $offset $spread lighten($color: $color, $amount: $lighten), 
+                -$offset -$offset $spread darken($color: $color, $amount: $darken);
+}
