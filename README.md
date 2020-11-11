@@ -17,7 +17,7 @@ A dark theme for CPBProva, a website for the Brazilian branch of Adventist Schoo
 * Typescript;
 * SASS;
 * Started with [DarkDaskin/generator-userscript](https://github.com/darkdaskin/generator-userscript);
-* Love <3
+* <3
 
 ## Contributing
 
@@ -37,5 +37,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used (especially you DarkDaskin, I wouldn't ever found a way to do exactly this without your project.)
-* Inspiration
-* etc.
